@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Schedulesce</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/widgets.css" rel="stylesheet" type="text/css" />
+<script src="js/ajax.js" type="text/javascript"></script>
+<script src="js/util.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="header">
+    <div id="title">
+        Schedulesce
+    </div>
+    <p>
+        View your team's schedules in one place, and have your game times emailed to you.
+    </p>
+</div>
+
+<div id="content">
+
+<h1>Team Schedules</h1>
+<ol>
+    <li>Find your team's schedule online.</li>
+    <li>Copy the URL of schedule and paste it in a box below.</li>
+    <li>Enter your team's name <em>exactly</em> as it appears in the schedule
+        and a unique name to identify the leage.</li>
+</ol>
+<p>
+    Currently, we support leaguelineup.com, pointstreak.com, americanstreethockey.com, and iCal schedules.
+</p>
+<div class="section">
+<table id="team-links">
+    <tr>
+        <td>
+            <input id="teamUrl_0" name="teamUrl[]" type="url" maxlength="256" class="url"
+                value="http://" placeholder="URL of Team's Schedule" />
+        </td>
+        <td>
+            <input id="teamName_0" name="teamName[]" type="text" maxlength="50" class="medium"
+                placeholder="Team Name" />
+        </td>
+        <td>
+            <input id="teamUnique_0" name="teamUnique[]" type="text" maxlength="50" class="medium"
+                placeholder="Unique Name" />
+        </td>
+        <td>
+            <div class="color-box" style="background: red;"> </div>
+        </td>
+        <td>
+            <a href="#" id="teamRemove">Remove</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="teamUrl_1" name="teamUrl[]" type="url" maxlength="256" class="url"
+                value="http://" placeholder="URL of Team's Schedule" />
+        </td>
+        <td>
+            <input id="teamName_1" name="teamName[]" type="text" maxlength="50" class="medium"
+                placeholder="Team Name" />
+        </td>
+        <td>
+            <input id="teamUnique_1" name="teamUnique[]" type="text" maxlength="50" class="medium"
+                placeholder="Unique Name" />
+        </td>
+        <td>
+            <div class="color-box" style="background: orange;"> </div>
+        </td>
+        <td>
+            <a href="#" id="teamRemove">Remove</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="teamUrl_2" name="teamUrl[]" type="url" maxlength="256" class="url"
+                value="http://" placeholder="URL of Team's Schedule" />
+        </td>
+        <td>
+            <input id="teamName_2" name="teamName[]" type="text" maxlength="50" class="medium"
+                placeholder="Team Name" />
+        </td>
+        <td>
+            <input id="teamUnique_2" name="teamUnique[]" type="text" maxlength="50" class="medium"
+                placeholder="Unique Name" />
+        </td>
+        <td>
+            <div class="color-box" style="background: green;"> </div>
+        </td>
+        <td>
+            <a href="#" id="teamRemove">Remove</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="teamUrl_3" name="teamUrl[]" type="url" maxlength="256" class="url"
+                value="http://" placeholder="URL of Team's Schedule" />
+        </td>
+        <td>
+            <input id="teamName_3" name="teamName[]" type="text" maxlength="50" class="medium"
+                placeholder="Team Name" />
+        </td>
+        <td>
+            <input id="teamUnique_3" name="teamUnique[]" type="text" maxlength="50" class="medium"
+                placeholder="Unique Name" />
+        </td>
+        <td>
+            <div class="color-box" style="background: blue;"> </div>
+        </td>
+        <td>
+            <a href="#" id="teamRemove">Remove</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="teamUrl_4" name="teamUrl[]" type="url" maxlength="256" class="url"
+                value="http://" placeholder="URL of Team's Schedule" />
+        </td>
+        <td>
+            <input id="teamName_4" name="teamName[]" type="text" maxlength="50" class="medium"
+                placeholder="Team Name" />
+        </td>
+        <td>
+            <input id="teamUnique_4" name="teamUnique[]" type="text" maxlength="50" class="medium"
+                placeholder="Unique Name" />
+        </td>
+        <td>
+            <div class="color-box" style="background: purple;"> </div>
+        </td>
+        <td>
+            <a href="#" id="teamRemove">Remove</a>
+        </td>
+    </tr>
+</table>
+</div>
+
+<h1>Your Combined Schedule</h1>
+<div class="section">
+<table>
+    <tr>
+        <th>
+            Date
+        </th>
+        <th>
+            Time
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            Team
+        </th>
+        <th>
+            Opponent
+        </th>
+    </tr>
+</table>
+
+<h2>Create a Profile</h2>
+<p>
+    We can send you email updates whenever your schedule is updated.
+    Enter your email address and a password. Also, tell us your name,
+    if you want.
+</p>
+<div style="width: 50%;">
+    <input id="email" name="email" type="email" maxlength="100" class="whole"
+        placeholder="Email Address" /><br/>
+    <input id="password" name="password" type="password" maxlength="100" class="whole"
+        placeholder="Password" /><br/>
+    <input id="fname" name="fname" type="text" maxlength="50" class="half"
+        placeholder="First Name" />
+    <input id="lname" name="lname" type="text" maxlength="50" class="half"
+        placeholder="Last Name" />
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+    &copy; 2012 Corey Beres.
+</div>
+
+</body>
+</html>

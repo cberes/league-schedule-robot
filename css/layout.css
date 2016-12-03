@@ -1,0 +1,185 @@
+div#content
+{
+    margin: 0 auto;
+    min-width: 45em;
+    width: 51%;
+}
+
+div#footer
+{
+    margin: 2em auto 0;
+    text-align: center;
+    min-width: 45em;
+    width: 51%;
+}
+
+div#header
+{
+    background: #222222;
+    color: #ffffff;
+    margin: 0 auto 2em;
+    padding: 0;
+    width: 100%;
+}
+
+div#subtitle, div#navigation
+{
+    font-size: 0.75em;
+    padding: 0.2em 10%;
+}
+
+div#title
+{
+    border-top: thin solid #222222;
+    border-bottom: thin solid #ffffff;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #333333;
+    margin: 0;
+    padding: 0.1em 10%;
+    
+    background: rgb(245,131,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,131,0,1) 0%, rgba(184,98,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,131,0,1)), color-stop(100%,rgba(184,98,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(245,131,0,1) 0%,rgba(184,98,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(245,131,0,1) 0%,rgba(184,98,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(245,131,0,1) 0%,rgba(184,98,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(245,131,0,1) 0%,rgba(184,98,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f58300', endColorstr='#b86200',GradientType=0 ); /* IE6-9 */
+}
+
+h1
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 1.5em;
+}
+
+h2
+{
+    font-size: 1.35em;
+    font-weight: bold;
+    margin: 0 0 1.35em;
+}
+
+h3
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 1.2em;
+}
+
+a, a:link, a:visited
+{
+    color: #FF8800;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover, a:active
+{
+    color: #FFBB33;
+    cursor: pointer;
+    outline: 0;
+}
+
+div#navigation
+{
+    float: right;
+}
+#navigation a, #navigation a:link, #navigation a:visited
+{
+    color: #CCCCCC;
+    font-weight: normal;
+    text-decoration: none;
+}
+#navigation a:hover, #navigation a:active
+{
+    color: #FFFFFF;
+}
+
+table.form-fields
+{
+    border: 0;
+    border-collapse: separate;
+    border-spacing: 0.2em;
+}
+table.form-fields td, table.form-fields th
+{
+    font-weight: normal;
+    padding: 0;
+    text-align: left;
+}
+table.form-fields th
+{
+    padding-right: 0.5em;
+}
+table.form-fields select
+{
+    width: 100%;
+}
+
+table#team-links td input, table#team-links td textarea/*, table#team-links td select*/
+{
+    width: 95%;
+}
+table#team-links td input, table#team-links td textarea/*, table#team-links td select*/
+{
+    padding: 0.25em 1.5%;
+}
+
+input.xl
+{
+    width: 25em;
+}
+input.large
+{
+    width: 18em;
+}
+input.medium
+{
+    width: 12em;
+}
+
+.whole
+{
+    width: 98%;
+}
+.half
+{
+    width: 47.25%;
+}
+
+#schedule a, #schedule a:link, #schedule a:visited
+{
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+}
+#schedule a:hover, #schedule a:active
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+tr.past
+{
+    font-style: italic;
+}
+
+tr.next
+{
+    border-bottom: thin dashed;
+    border-top: thin double;
+    font-weight: bold;
+}
+
+.errors
+{
+    color: #CC0000;
+}
+
+ol ul, ul ol, ol ol, ul ul
+{
+    margin: 0;
+}

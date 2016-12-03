@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <resource name="secret_key">INSERT_SECRET_KEY</resource>
+    <resource name="dbhost">localhost</resource>
+    <resource name="dbuser">root</resource>
+    <resource name="dbpass">INSERT_DB_PASSWORD</resource>
+    <resource name="dbname">ScheduleCollector</resource>
+    <resource name="errorurl">error.html</resource>
+    <resource name="homeurl">index.php</resource>
+    <resource name="loginurl">index.php</resource>
+    <resource name="emailfrom">help@example.com</resource>
+    <resource name="baseurl">http://example.com</resource>
+    <resource name="recaptcha_public">INSERT_RECAPTCHA_PUBLIC_TOKEN</resource>
+    <resource name="recaptcha_private">INSERT_RECAPTCHA_PUBLIC_TOKEN</resource>
+    <resource name="ash.txt_headers">0|1|DATE|3|TIME|5|AWAY|7|8|9|10|11|12|13|HOME</resource>
+    <resource name="www.americanstreethockey.com_headers">0|1|DATE|3|TIME|5|AWAY|7|8|9|10|11|12|13|HOME</resource>
+    <resource name="americanstreethockey.com_headers">0|1|DATE|3|TIME|5|AWAY|7|8|9|10|11|12|13|HOME</resource>
+</resources>
