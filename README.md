@@ -4,7 +4,7 @@ This website aggregates (sports) league schedules from several other websites. S
 
 ## Dependencies
 
-- at least {HP 5.3
+- at least PHP 5.3
 - MySQL database
 
 This uses my [ooricooo](https://github.com/cberes/ooricoo) project for ORM, a copy of which is included.
